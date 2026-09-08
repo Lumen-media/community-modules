@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Lumen-media/community-modules/blob/main/schema.json",
+  "title": "Lumen community modules catalog",
+  "description": "Schema validating modules.json, the Lumen store catalog. See docs/architecture/store-architecture.md in the Lumen app repo.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "modules"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "description": "Version of this catalog schema. Bumped whenever the entry shape changes in a breaking way; the app rejects catalogs it doesn't understand."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp of catalog generation."
+    },
+    "modules": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/module" }
+    }
+  },
+  "$defs": {
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "tagline", "description", "tags", "author", "license", "repo", "status", "approvedAt"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(\\.[a-z0-9]+)+$",
+          "description": "Reverse-DNS id, must equal the module's own manifest.json id. Globally unique."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name shown in the store."
+        },
+        "tagline": {
+          "type": "string",
+          "description": "Short one-line description shown in the catalog rows."
+        },
+        "description": {
+          "type": "string",
+          "description": "Longer markdown description shown on the detail page."
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Taxonomy tags used for filtering (e.g. utility, engagement)."
+        },
+        "author": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "url"],
+          "properties": {
+            "name": { "type": "string" },
+            "url": { "type": "string", "format": "uri", "pattern": "^https://github\\.com/.*$" }
+          },
+          "description": "Module author. url is their GitHub profile; the avatar is derived from it."
+        },
+        "license": {
+          "type": "string",
+          "description": "SPDX identifier of the module license."
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+          "description": "The author's GitHub repo the app fetches releases from (owner/repo)."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Optional path to an icon asset in this repo (icons/<id>/icon.svg)."
+        },
+        "cover": {
+          "type": "string",
+          "description": "Optional path to a cover asset in this repo (covers/<id>/cover.png)."
+        },
+        "lumenVerified": {
+          "type": "boolean",
+          "description": "Optional first-party badge granted by the Lumen team during review. Trust signal only; grants no extra permissions."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["approved", "removed", "deprecated", "flagged"],
+          "description": "Moderation state. v1 only writes approved; the rest are reserved for later."
+        },
+        "approvedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 timestamp of when the entry was approved."
+        }
+      }
+    }
+  }
+}
