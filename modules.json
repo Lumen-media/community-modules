@@ -13,7 +13,7 @@
         "url": "https://github.com/gabrielSantos1101"
       },
       "license": "MIT",
-      "icon": "https://github.com/Lumen-media/countdown-module/blob/main/assets/timer.svg",
+      "icon": "icons/com.lumenmedia.countdown/icon.svg",
       "repo": "Lumen-media/countdown-module",
       "status": "approved",
       "approvedAt": "2026-09-08T00:00:00Z"
@@ -29,7 +29,7 @@
         "url": "https://github.com/gabrielSantos1101"
       },
       "license": "MIT",
-      "icon": "https://github.com/Lumen-media/youtube-module/blob/main/assets/youtube-logo-png-20.png",
+      "icon": "icons/com.lumenmedia.youtube/icon.png",
       "repo": "Lumen-media/youtube-module",
       "status": "approved",
       "approvedAt": "2026-09-08T00:00:00Z"
@@ -45,7 +45,7 @@
         "url": "https://github.com/gabrielSantos1101"
       },
       "license": "MIT",
-      "icon": "https://github.com/Lumen-media/bible-module/blob/main/assets/book-open-text.svg",
+      "icon": "icons/com.lumenmedia.bible/icon.svg",
       "repo": "Lumen-media/bible-module",
       "status": "approved",
       "approvedAt": "2026-09-08T00:00:00Z"
@@ -61,7 +61,7 @@
         "url": "https://github.com/gabrielSantos1101"
       },
       "license": "MIT",
-      "icon": "https://github.com/Lumen-media/raffle-module/blob/main/assets/ticket-percent.svg",
+      "icon": "icons/com.lumenmedia.raffle/icon.svg",
       "repo": "Lumen-media/raffle-module",
       "status": "approved",
       "approvedAt": "2026-09-08T00:00:00Z"
