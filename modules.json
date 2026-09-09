@@ -3,7 +3,7 @@
   "generatedAt": "2026-09-08T00:00:00Z",
   "modules": [
     {
-      "id": "com.lumenmedia.countdown",
+      "id": "com.gabrielsantos.countdown",
       "name": "Countdown Module",
       "tagline": "Full-featured countdown timer with presenter/overlay output, time triggers, and queue integration.",
       "description": "Countdown timer module for Lumen with presenter/overlay output, live styling preview, time triggers, bundled & library audio, queue integration, corner/fullscreen modes, timer presets, and Commander quick controls.",
@@ -18,7 +18,7 @@
       "approvedAt": "2026-09-08T00:00:00Z"
     },
     {
-      "id": "com.lumenmedia.youtube",
+      "id": "com.gabrielsantos.youtube",
       "name": "YouTube",
       "tagline": "Search YouTube videos and add them to your queue, library, or play them directly.",
       "description": "Search YouTube videos and add them to your queue, library, or play them directly from within Lumen.",
@@ -33,7 +33,7 @@
       "approvedAt": "2026-09-08T00:00:00Z"
     },
     {
-      "id": "com.lumenmedia.bible",
+      "id": "com.gabrielsantos.bible",
       "name": "Bíblia",
       "tagline": "Complete Bible reader with multiple translations, offline search, and presenter projection.",
       "description": "A complete Bible reader with multiple translations, offline search, and presenter projection for Lumen.",
@@ -48,7 +48,7 @@
       "approvedAt": "2026-09-08T00:00:00Z"
     },
     {
-      "id": "com.lumenmedia.raffle",
+      "id": "com.gabrielsantos.raffle",
       "name": "Raffle",
       "tagline": "Quick draws during live events.",
       "description": "A raffle module for Lumen, designed for quick draws during live events.",
