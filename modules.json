@@ -1,5 +1,66 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-09-08T00:00:00Z",
-  "modules": []
+  "modules": [
+    {
+      "id": "com.countdown-module",
+      "name": "Countdown Module",
+      "tagline": "Full-featured countdown timer with presenter/overlay output, time triggers, and queue integration.",
+      "description": "Countdown timer module for Lumen with presenter/overlay output, live styling preview, time triggers, bundled & library audio, queue integration, corner/fullscreen modes, timer presets, and Commander quick controls.",
+      "tags": ["utility", "timer", "overlay"],
+      "author": {
+        "name": "Gabriel Santos",
+        "url": "https://github.com/gabrielSantos1101"
+      },
+      "license": "MIT",
+      "repo": "Lumen-media/countdown-module",
+      "status": "approved",
+      "approvedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "id": "com.lumen-media.youtube-module",
+      "name": "YouTube",
+      "tagline": "Search YouTube videos and add them to your queue, library, or play them directly.",
+      "description": "Search YouTube videos and add them to your queue, library, or play them directly from within Lumen.",
+      "tags": ["media", "search", "video"],
+      "author": {
+        "name": "Gabriel Santos",
+        "url": "https://github.com/gabrielSantos1101"
+      },
+      "license": "MIT",
+      "repo": "Lumen-media/youtube-module",
+      "status": "approved",
+      "approvedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "id": "com.bible-module",
+      "name": "Bíblia",
+      "tagline": "Complete Bible reader with multiple translations, offline search, and presenter projection.",
+      "description": "A complete Bible reader with multiple translations, offline search, and presenter projection for Lumen.",
+      "tags": ["text", "reference", "presenter"],
+      "author": {
+        "name": "Gabriel Santos",
+        "url": "https://github.com/gabrielSantos1101"
+      },
+      "license": "MIT",
+      "repo": "Lumen-media/bible-module",
+      "status": "approved",
+      "approvedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "id": "com.example.raffle-module",
+      "name": "Raffle",
+      "tagline": "Quick draws during live events.",
+      "description": "A raffle module for Lumen, designed for quick draws during live events.",
+      "tags": ["engagement", "utility"],
+      "author": {
+        "name": "Gabriel Santos",
+        "url": "https://github.com/gabrielSantos1101"
+      },
+      "license": "MIT",
+      "repo": "Lumen-media/raffle-module",
+      "status": "approved",
+      "approvedAt": "2026-09-08T00:00:00Z"
+    }
+  ]
 }
